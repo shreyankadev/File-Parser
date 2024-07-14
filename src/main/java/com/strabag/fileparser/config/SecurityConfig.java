@@ -1,4 +1,4 @@
-package com.strabag.processor.config;
+package com.strabag.fileparser.config;
 
 import java.lang.annotation.Annotation;
 import org.springframework.context.annotation.Bean;

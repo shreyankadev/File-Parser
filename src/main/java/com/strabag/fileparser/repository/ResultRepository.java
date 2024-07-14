@@ -1,4 +1,4 @@
-package com.strabag.processor.repository;
+package com.strabag.fileparser.repository;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import com.strabag.processor.model.Result;
+import com.strabag.fileparser.model.Result;
 
 public interface ResultRepository extends JpaRepository<Result, Long> {
 

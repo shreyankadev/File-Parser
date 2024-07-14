@@ -1,32 +1,33 @@
-package com.strabag.processor.model;
+package com.strabag.fileparser.model;
 
 import java.time.LocalDateTime;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.ToString;
 
 @Entity
 public class Result {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	@Column(nullable = false)
 	private Long jobId;
+	
 	@Column(name = "created_at", nullable = false, updatable = false)
 	private LocalDateTime createdAt;
+	
 	@Column(name = "result", columnDefinition = "CLOB")
 	private String result;
+	
 	@Column
 	private String fileName;
 	
 	public Result() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	
 	public Result(Long id, Long jobId, LocalDateTime createdAt, String result, String fileName) {

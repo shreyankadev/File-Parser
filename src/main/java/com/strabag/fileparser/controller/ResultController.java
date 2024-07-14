@@ -1,4 +1,4 @@
-package com.strabag.processor.controller;
+package com.strabag.fileparser.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.strabag.processor.model.Job;
-import com.strabag.processor.model.Result;
-import com.strabag.processor.service.ResultService;
+import com.strabag.fileparser.model.Job;
+import com.strabag.fileparser.model.Result;
+import com.strabag.fileparser.service.ResultService;
 
 @RestController
 @RequestMapping("/results")

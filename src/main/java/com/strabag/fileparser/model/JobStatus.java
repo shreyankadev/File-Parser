@@ -1,4 +1,4 @@
-package com.strabag.processor.model;
+package com.strabag.fileparser.model;
 
 public enum JobStatus {
     PENDING,

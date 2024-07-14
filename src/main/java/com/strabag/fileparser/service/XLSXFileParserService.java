@@ -1,8 +1,11 @@
-package com.strabag.processor.service;
+package com.strabag.fileparser.service;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -23,8 +26,8 @@ import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.strabag.processor.config.AppConfig;
-import com.strabag.processor.controller.ResultController;
+import com.strabag.fileparser.config.AppConfig;
+import com.strabag.fileparser.controller.ResultController;
 
 @Service
 @Qualifier("xlsxFileParser")
@@ -40,8 +43,9 @@ public class XLSXFileParserService extends FileParserService {
 		try {
 			String filePath = config.getImportFolder();
 			filePath = (filePath.endsWith("/"))?filePath:filePath+"/";
-			ClassPathResource resource = new ClassPathResource(fileName);
-			InputStream inputStream = resource.getInputStream();
+			File file = new File(filePath+fileName);
+			
+			InputStream inputStream = new FileInputStream(file);
 
 			// Create a workbook and a sheet
 			Workbook workbook = new XSSFWorkbook(inputStream);

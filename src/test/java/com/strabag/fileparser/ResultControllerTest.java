@@ -1,4 +1,4 @@
-package com.strabag.processor;
+package com.strabag.fileparser;
 
 import static org.hamcrest.CoreMatchers.anything;
 import static org.mockito.Mockito.when;
@@ -25,10 +25,10 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.strabag.processor.model.Result;
-import com.strabag.processor.repository.JobRepository;
-import com.strabag.processor.repository.ResultRepository;
-import com.strabag.processor.service.ResultService;
+import com.strabag.fileparser.model.Result;
+import com.strabag.fileparser.repository.JobRepository;
+import com.strabag.fileparser.repository.ResultRepository;
+import com.strabag.fileparser.service.ResultService;
 
 @SpringBootTest
 @AutoConfigureMockMvc

@@ -1,23 +1,22 @@
-package com.strabag.processor.service;
+package com.strabag.fileparser.service;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.io.ClassPathResource;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.opencsv.CSVReader;
-import com.strabag.processor.config.AppConfig;
-import com.strabag.processor.controller.ResultController;
 
 @Service
 @Qualifier("csvFileParser")
@@ -32,8 +31,10 @@ public class CSVFileParser extends FileParserService {
 		try {
 			String filePath = config.getImportFolder();
 			filePath = (filePath.endsWith("/"))?filePath:filePath+"/";
-			ClassPathResource resource = new ClassPathResource(filePath+fileName);
-			InputStreamReader reader = new InputStreamReader(resource.getInputStream());
+			logger.info("File path "+filePath+fileName);
+			File file = new File(filePath+fileName);
+			
+			InputStreamReader reader = new InputStreamReader(new FileInputStream(file));
 
 			// Use CSVReader to read the CSV file
 			CSVReader csvReader = new CSVReader(reader);

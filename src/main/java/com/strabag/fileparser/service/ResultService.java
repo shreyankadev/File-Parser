@@ -1,10 +1,9 @@
-package com.strabag.processor.service;
+package com.strabag.fileparser.service;
 
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
 import org.slf4j.Logger;
@@ -13,17 +12,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.domain.Example;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
-import org.springframework.http.StreamingHttpOutputMessage.Body;
 import org.springframework.stereotype.Service;
 
-import com.strabag.processor.controller.ResultController;
-import com.strabag.processor.model.Job;
-import com.strabag.processor.model.JobStatus;
-import com.strabag.processor.model.Result;
-import com.strabag.processor.repository.JobRepository;
-import com.strabag.processor.repository.ResultRepository;
+import com.strabag.fileparser.model.Job;
+import com.strabag.fileparser.model.JobStatus;
+import com.strabag.fileparser.model.Result;
+import com.strabag.fileparser.repository.JobRepository;
+import com.strabag.fileparser.repository.ResultRepository;
 
 @Service
 public class ResultService {

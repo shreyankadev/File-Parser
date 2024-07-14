@@ -5750,3 +5750,787 @@ java.lang.Exception: java.io.FileNotFoundException: class path resource [C:/Proj
 2024-07-14T11:47:33.078+02:00  INFO 27424 --- [processor] [http-nio-8080-exec-5] c.s.processor.service.ResultService      : getParsedData parsed data 
 2024-07-14T11:47:33.109+02:00  INFO 27424 --- [processor] [http-nio-8080-exec-5] c.s.processor.service.ResultService      : createResult Job
 2024-07-14T11:47:33.110+02:00  INFO 27424 --- [processor] [http-nio-8080-exec-5] c.s.processor.service.ResultService      : findJobAndParseFile() parsed response 
+2024-07-14T13:05:21.278+02:00  INFO 6276 --- [processor] [main] c.s.processor.FileParserApplication      : Starting FileParserApplication using Java 17.0.9 with PID 6276 (C:\Projects\processor\processor\target\classes started by Shreya in C:\Projects\processor\processor)
+2024-07-14T13:05:21.293+02:00  INFO 6276 --- [processor] [main] c.s.processor.FileParserApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-07-14T13:05:23.137+02:00  INFO 6276 --- [processor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-14T13:05:23.240+02:00  INFO 6276 --- [processor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 2 JPA repository interfaces.
+2024-07-14T13:05:24.712+02:00  INFO 6276 --- [processor] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-14T13:05:24.745+02:00  INFO 6276 --- [processor] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-14T13:05:24.745+02:00  INFO 6276 --- [processor] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-14T13:05:24.961+02:00  INFO 6276 --- [processor] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-14T13:05:24.962+02:00  INFO 6276 --- [processor] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3532 ms
+2024-07-14T13:05:25.027+02:00  INFO 6276 --- [processor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-14T13:05:25.424+02:00  INFO 6276 --- [processor] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:33435072-2851-4194-8521-0eff41a870ca user=SA
+2024-07-14T13:05:25.428+02:00  INFO 6276 --- [processor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-14T13:05:25.448+02:00  INFO 6276 --- [processor] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:33435072-2851-4194-8521-0eff41a870ca'
+2024-07-14T13:05:25.872+02:00  INFO 6276 --- [processor] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-14T13:05:26.043+02:00  INFO 6276 --- [processor] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-14T13:05:26.145+02:00  INFO 6276 --- [processor] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-14T13:05:26.941+02:00  INFO 6276 --- [processor] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-14T13:05:28.606+02:00  INFO 6276 --- [processor] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-14T13:05:28.714+02:00  INFO 6276 --- [processor] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-14T13:05:29.359+02:00  INFO 6276 --- [processor] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-14T13:05:30.110+02:00  WARN 6276 --- [processor] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-14T13:05:30.326+02:00  INFO 6276 --- [processor] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-07-14T13:05:30.500+02:00  INFO 6276 --- [processor] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-07-14T13:05:31.421+02:00  INFO 6276 --- [processor] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-14T13:05:31.444+02:00  INFO 6276 --- [processor] [main] c.s.processor.FileParserApplication      : Started FileParserApplication in 11.331 seconds (process running for 12.185)
+2024-07-14T13:05:46.221+02:00  INFO 6276 --- [processor] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-14T13:05:46.223+02:00  INFO 6276 --- [processor] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-14T13:05:46.227+02:00  INFO 6276 --- [processor] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-07-14T13:05:46.706+02:00  INFO 6276 --- [processor] [http-nio-8080-exec-1] c.s.p.controller.ResultController        : Going to parse file: File2.csv
+2024-07-14T13:05:47.096+02:00  INFO 6276 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : createJob Job
+2024-07-14T13:05:47.096+02:00  INFO 6276 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : getJob Job
+2024-07-14T13:05:47.106+02:00  INFO 6276 --- [processor] [task-1] c.s.processor.service.CSVFileParser      : Parsing csv file :File2.csv
+2024-07-14T13:05:47.194+02:00  INFO 6276 --- [processor] [task-1] c.s.processor.service.CSVFileParser      : Parsed data of csv file :[{"Class 1":"Data 1","Section ":"Section 1","Class 3":"Data3 1","Class 2":"Data2 1"},{"Class 1":"Data 2","Section ":"Section 2","Class 3":"Data3 2","Class 2":"Data2 2"},{"Class 1":"Data 3","Section ":"Section 3","Class 3":"Data3 3","Class 2":"Data2 3"},{"Class 1":"Data 4","Section ":"Section 4","Class 3":"Data3 4","Class 2":"Data2 4"},{"Class 1":"Data 5","Section ":"Section 5","Class 3":"Data3 5","Class 2":"Data2 5"},{"Class 1":"Data 6","Section ":"Section 6","Class 3":"Data3 6","Class 2":"Data2 6"},{"Class 1":"Data 7","Section ":"Section 7","Class 3":"Data3 7","Class 2":"Data2 7"},{"Class 1":"Data 8","Section ":"Section 8","Class 3":"Data3 8","Class 2":"Data2 8"},{"Class 1":"Data 9","Section ":"Section 9","Class 3":"Data3 9","Class 2":"Data2 9"},{"Class 1":"Data 10","Section ":"Section 10","Class 3":"Data3 10","Class 2":"Data2 10"},{"Class 1":"Data 11","Section ":"Section 11","Class 3":"Data3 11","Class 2":"Data2 11"},{"Class 1":"Data 12","Section ":"Section 12","Class 3":"Data3 12","Class 2":"Data2 12"},{"Class 1":"Data 13","Section ":"Section 13","Class 3":"Data3 13","Class 2":"Data2 13"},{"Class 1":"Data 14","Section ":"Section 14","Class 3":"Data3 14","Class 2":"Data2 14"},{"Class 1":"Data 15","Section ":"Section 15","Class 3":"Data3 15","Class 2":"Data2 15"},{"Class 1":"Data 16","Section ":"Section 16","Class 3":"Data3 16","Class 2":"Data2 16"},{"Class 1":"Data 17","Section ":"Section 17","Class 3":"Data3 17","Class 2":"Data2 17"},{"Class 1":"Data 18","Section ":"Section 18","Class 3":"Data3 18","Class 2":"Data2 18"},{"Class 1":"Data 19","Section ":"Section 19","Class 3":"Data3 19","Class 2":"Data2 19"},{"Class 1":"Data 20","Section ":"Section 20","Class 3":"Data3 20","Class 2":"Data2 20"},{"Class 1":"Data 21","Section ":"Section 21","Class 3":"Data3 21","Class 2":"Data2 21"},{"Class 1":"Data 22","Section ":"Section 22","Class 3":"Data3 22","Class 2":"Data2 22"},{"Class 1":"Data 23","Section ":"Section 23","Class 3":"Data3 23","Class 2":"Data2 23"},{"Class 1":"Data 24","Section ":"Section 24","Class 3":"Data3 24","Class 2":"Data2 24"},{"Class 1":"Data 25","Section ":"Section 25","Class 3":"Data3 25","Class 2":"Data2 25"},{"Class 1":"Data 26","Section ":"Section 26","Class 3":"Data3 26","Class 2":"Data2 26"},{"Class 1":"Data 27","Section ":"Section 27","Class 3":"Data3 27","Class 2":"Data2 27"},{"Class 1":"Data 28","Section ":"Section 28","Class 3":"Data3 28","Class 2":"Data2 28"},{"Class 1":"Data 29","Section ":"Section 29","Class 3":"Data3 29","Class 2":"Data2 29"}]
+2024-07-14T13:05:47.195+02:00  INFO 6276 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : getParsedData parsed data 
+2024-07-14T13:05:47.231+02:00  INFO 6276 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : createResult Job
+2024-07-14T13:05:47.232+02:00  INFO 6276 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : findJobAndParseFile() parsed response 
+2024-07-14T13:06:39.955+02:00  INFO 27340 --- [processor] [main] c.s.processor.FileParserApplication      : Starting FileParserApplication using Java 17.0.9 with PID 27340 (C:\Projects\processor\processor\target\classes started by Shreya in C:\Projects\processor\processor)
+2024-07-14T13:06:39.975+02:00  INFO 27340 --- [processor] [main] c.s.processor.FileParserApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-07-14T13:06:41.941+02:00  INFO 27340 --- [processor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-14T13:06:42.096+02:00  INFO 27340 --- [processor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131 ms. Found 2 JPA repository interfaces.
+2024-07-14T13:06:43.547+02:00  INFO 27340 --- [processor] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-14T13:06:43.573+02:00  INFO 27340 --- [processor] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-14T13:06:43.573+02:00  INFO 27340 --- [processor] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-14T13:06:43.768+02:00  INFO 27340 --- [processor] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-14T13:06:43.769+02:00  INFO 27340 --- [processor] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3607 ms
+2024-07-14T13:06:43.835+02:00  INFO 27340 --- [processor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-14T13:06:44.262+02:00  INFO 27340 --- [processor] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:33435072-2851-4194-8521-0eff41a870ca user=SA
+2024-07-14T13:06:44.268+02:00  INFO 27340 --- [processor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-14T13:06:44.296+02:00  INFO 27340 --- [processor] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:33435072-2851-4194-8521-0eff41a870ca'
+2024-07-14T13:06:44.697+02:00  INFO 27340 --- [processor] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-14T13:06:44.850+02:00  INFO 27340 --- [processor] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-14T13:06:44.939+02:00  INFO 27340 --- [processor] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-14T13:06:45.609+02:00  INFO 27340 --- [processor] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-14T13:06:47.300+02:00  INFO 27340 --- [processor] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-14T13:06:47.425+02:00  INFO 27340 --- [processor] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-14T13:06:48.079+02:00  INFO 27340 --- [processor] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-14T13:06:48.901+02:00  WARN 27340 --- [processor] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-14T13:06:49.110+02:00  INFO 27340 --- [processor] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-07-14T13:06:49.301+02:00  INFO 27340 --- [processor] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-07-14T13:06:50.100+02:00  INFO 27340 --- [processor] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-14T13:06:50.120+02:00  INFO 27340 --- [processor] [main] c.s.processor.FileParserApplication      : Started FileParserApplication in 11.276 seconds (process running for 12.145)
+2024-07-14T13:06:58.356+02:00  INFO 27340 --- [processor] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-14T13:06:58.357+02:00  INFO 27340 --- [processor] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-14T13:06:58.360+02:00  INFO 27340 --- [processor] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-07-14T13:06:58.732+02:00  INFO 27340 --- [processor] [http-nio-8080-exec-1] c.s.p.controller.ResultController        : Going to parse file: File2.csv
+2024-07-14T13:06:59.049+02:00  INFO 27340 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : createJob Job
+2024-07-14T13:06:59.049+02:00  INFO 27340 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : getJob Job
+2024-07-14T13:06:59.059+02:00  INFO 27340 --- [processor] [task-1] c.s.processor.service.CSVFileParser      : Parsing csv file :File2.csv
+2024-07-14T13:06:59.066+02:00 ERROR 27340 --- [processor] [task-1] c.s.processor.service.CSVFileParser      : File Not found
+2024-07-14T13:06:59.066+02:00 ERROR 27340 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : Exception 
+
+java.lang.Exception: java.io.FileNotFoundException: class path resource [File2.csv] cannot be opened because it does not exist
+	at com.strabag.processor.service.ResultService.getParsedData(ResultService.java:91) ~[classes/:na]
+	at com.strabag.processor.service.ResultService.findJobAndParseFile(ResultService.java:62) ~[classes/:na]
+	at com.strabag.processor.controller.ResultController.parseFile(ResultController.java:49) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.25.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.25.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:117) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:213) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2024-07-14T13:12:23.713+02:00  INFO 19960 --- [processor] [main] c.s.processor.FileParserApplication      : Starting FileParserApplication using Java 17.0.9 with PID 19960 (C:\Projects\processor\processor\target\classes started by Shreya in C:\Projects\processor\processor)
+2024-07-14T13:12:23.718+02:00  INFO 19960 --- [processor] [main] c.s.processor.FileParserApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-07-14T13:12:25.565+02:00  INFO 19960 --- [processor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-14T13:12:25.686+02:00  INFO 19960 --- [processor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 2 JPA repository interfaces.
+2024-07-14T13:12:27.193+02:00  INFO 19960 --- [processor] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-14T13:12:27.218+02:00  INFO 19960 --- [processor] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-14T13:12:27.218+02:00  INFO 19960 --- [processor] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-14T13:12:27.439+02:00  INFO 19960 --- [processor] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-14T13:12:27.440+02:00  INFO 19960 --- [processor] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3565 ms
+2024-07-14T13:12:27.512+02:00  INFO 19960 --- [processor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-14T13:12:28.005+02:00  INFO 19960 --- [processor] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:33435072-2851-4194-8521-0eff41a870ca user=SA
+2024-07-14T13:12:28.009+02:00  INFO 19960 --- [processor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-14T13:12:28.035+02:00  INFO 19960 --- [processor] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:33435072-2851-4194-8521-0eff41a870ca'
+2024-07-14T13:12:28.423+02:00  INFO 19960 --- [processor] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-14T13:12:28.559+02:00  INFO 19960 --- [processor] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-14T13:12:28.630+02:00  INFO 19960 --- [processor] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-14T13:12:29.209+02:00  INFO 19960 --- [processor] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-14T13:12:30.510+02:00  INFO 19960 --- [processor] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-14T13:12:30.606+02:00  INFO 19960 --- [processor] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-14T13:12:31.230+02:00  INFO 19960 --- [processor] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-14T13:12:31.972+02:00  WARN 19960 --- [processor] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-14T13:12:32.155+02:00  INFO 19960 --- [processor] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-07-14T13:12:32.301+02:00  INFO 19960 --- [processor] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-07-14T13:12:33.468+02:00  INFO 19960 --- [processor] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-14T13:12:33.487+02:00  INFO 19960 --- [processor] [main] c.s.processor.FileParserApplication      : Started FileParserApplication in 10.863 seconds (process running for 11.81)
+2024-07-14T13:12:42.670+02:00  INFO 19960 --- [processor] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-14T13:12:42.670+02:00  INFO 19960 --- [processor] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-14T13:12:42.674+02:00  INFO 19960 --- [processor] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-07-14T13:12:43.083+02:00  INFO 19960 --- [processor] [http-nio-8080-exec-1] c.s.p.controller.ResultController        : Going to parse file: File2.csv
+2024-07-14T13:12:43.455+02:00  INFO 19960 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : createJob Job
+2024-07-14T13:12:43.455+02:00  INFO 19960 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : getJob Job
+2024-07-14T13:12:43.466+02:00  INFO 19960 --- [processor] [task-1] c.s.processor.service.CSVFileParser      : Parsing csv file :File2.csv
+2024-07-14T13:12:43.472+02:00 ERROR 19960 --- [processor] [task-1] c.s.processor.service.CSVFileParser      : File Not found
+2024-07-14T13:12:43.473+02:00 ERROR 19960 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : Exception 
+
+java.lang.Exception: java.io.FileNotFoundException: class path resource [File2.csv] cannot be opened because it does not exist
+	at com.strabag.processor.service.ResultService.getParsedData(ResultService.java:91) ~[classes/:na]
+	at com.strabag.processor.service.ResultService.findJobAndParseFile(ResultService.java:62) ~[classes/:na]
+	at com.strabag.processor.controller.ResultController.parseFile(ResultController.java:49) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.25.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.25.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:117) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:213) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2024-07-14T13:13:45.791+02:00  INFO 28396 --- [processor] [main] c.s.processor.FileParserApplication      : Starting FileParserApplication using Java 17.0.9 with PID 28396 (C:\Projects\processor\processor\target\classes started by Shreya in C:\Projects\processor\processor)
+2024-07-14T13:13:45.799+02:00  INFO 28396 --- [processor] [main] c.s.processor.FileParserApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-07-14T13:13:47.406+02:00  INFO 28396 --- [processor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-14T13:13:47.547+02:00  INFO 28396 --- [processor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117 ms. Found 2 JPA repository interfaces.
+2024-07-14T13:13:48.955+02:00  INFO 28396 --- [processor] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-14T13:13:48.985+02:00  INFO 28396 --- [processor] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-14T13:13:48.985+02:00  INFO 28396 --- [processor] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-14T13:13:49.176+02:00  INFO 28396 --- [processor] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-14T13:13:49.177+02:00  INFO 28396 --- [processor] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3277 ms
+2024-07-14T13:13:49.249+02:00  INFO 28396 --- [processor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-14T13:13:49.658+02:00  INFO 28396 --- [processor] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:33435072-2851-4194-8521-0eff41a870ca user=SA
+2024-07-14T13:13:49.663+02:00  INFO 28396 --- [processor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-14T13:13:49.685+02:00  INFO 28396 --- [processor] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:33435072-2851-4194-8521-0eff41a870ca'
+2024-07-14T13:13:50.037+02:00  INFO 28396 --- [processor] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-14T13:13:50.193+02:00  INFO 28396 --- [processor] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-14T13:13:50.263+02:00  INFO 28396 --- [processor] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-14T13:13:50.937+02:00  INFO 28396 --- [processor] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-14T13:13:52.529+02:00  INFO 28396 --- [processor] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-14T13:13:52.658+02:00  INFO 28396 --- [processor] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-14T13:13:53.365+02:00  INFO 28396 --- [processor] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-14T13:13:54.196+02:00  WARN 28396 --- [processor] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-14T13:13:54.417+02:00  INFO 28396 --- [processor] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-07-14T13:13:54.588+02:00  INFO 28396 --- [processor] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-07-14T13:13:55.520+02:00  INFO 28396 --- [processor] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-14T13:13:55.546+02:00  INFO 28396 --- [processor] [main] c.s.processor.FileParserApplication      : Started FileParserApplication in 10.8 seconds (process running for 11.672)
+2024-07-14T13:14:05.109+02:00  INFO 28396 --- [processor] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-14T13:14:05.109+02:00  INFO 28396 --- [processor] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-14T13:14:05.114+02:00  INFO 28396 --- [processor] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-07-14T13:14:05.438+02:00  INFO 28396 --- [processor] [http-nio-8080-exec-1] c.s.p.controller.ResultController        : Going to parse file: File2.csv
+2024-07-14T13:14:05.722+02:00  INFO 28396 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : createJob Job
+2024-07-14T13:14:05.723+02:00  INFO 28396 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : getJob Job
+2024-07-14T13:14:05.730+02:00  INFO 28396 --- [processor] [task-1] c.s.processor.service.CSVFileParser      : Parsing csv file :File2.csv
+2024-07-14T13:14:05.735+02:00 ERROR 28396 --- [processor] [task-1] c.s.processor.service.CSVFileParser      : File Not found
+2024-07-14T13:14:05.736+02:00 ERROR 28396 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : Exception 
+
+java.lang.Exception: java.io.FileNotFoundException: class path resource [File2.csv] cannot be opened because it does not exist
+	at com.strabag.processor.service.ResultService.getParsedData(ResultService.java:91) ~[classes/:na]
+	at com.strabag.processor.service.ResultService.findJobAndParseFile(ResultService.java:62) ~[classes/:na]
+	at com.strabag.processor.controller.ResultController.parseFile(ResultController.java:49) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.25.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.25.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:117) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:213) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2024-07-14T13:21:45.005+02:00  INFO 22540 --- [processor] [main] c.s.processor.FileParserApplication      : Starting FileParserApplication using Java 17.0.9 with PID 22540 (C:\Projects\processor\processor\target\classes started by Shreya in C:\Projects\processor\processor)
+2024-07-14T13:21:45.010+02:00  INFO 22540 --- [processor] [main] c.s.processor.FileParserApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-07-14T13:21:46.456+02:00  INFO 22540 --- [processor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-14T13:21:46.577+02:00  INFO 22540 --- [processor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 2 JPA repository interfaces.
+2024-07-14T13:21:47.934+02:00  INFO 22540 --- [processor] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-14T13:21:47.961+02:00  INFO 22540 --- [processor] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-14T13:21:47.962+02:00  INFO 22540 --- [processor] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-14T13:21:48.134+02:00  INFO 22540 --- [processor] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-14T13:21:48.135+02:00  INFO 22540 --- [processor] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3028 ms
+2024-07-14T13:21:48.195+02:00  INFO 22540 --- [processor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-14T13:21:48.597+02:00  INFO 22540 --- [processor] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:33435072-2851-4194-8521-0eff41a870ca user=SA
+2024-07-14T13:21:48.601+02:00  INFO 22540 --- [processor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-14T13:21:48.620+02:00  INFO 22540 --- [processor] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:33435072-2851-4194-8521-0eff41a870ca'
+2024-07-14T13:21:48.935+02:00  INFO 22540 --- [processor] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-14T13:21:49.067+02:00  INFO 22540 --- [processor] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-14T13:21:49.139+02:00  INFO 22540 --- [processor] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-14T13:21:49.746+02:00  INFO 22540 --- [processor] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-14T13:21:51.375+02:00  INFO 22540 --- [processor] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-14T13:21:51.499+02:00  INFO 22540 --- [processor] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-14T13:21:52.073+02:00  INFO 22540 --- [processor] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-14T13:21:53.271+02:00  WARN 22540 --- [processor] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-14T13:21:53.515+02:00  INFO 22540 --- [processor] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-07-14T13:21:53.885+02:00  INFO 22540 --- [processor] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-07-14T13:21:54.928+02:00  INFO 22540 --- [processor] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-14T13:21:54.948+02:00  INFO 22540 --- [processor] [main] c.s.processor.FileParserApplication      : Started FileParserApplication in 10.915 seconds (process running for 11.809)
+2024-07-14T13:23:45.722+02:00  INFO 22540 --- [processor] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-14T13:23:45.726+02:00  INFO 22540 --- [processor] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-14T13:23:45.730+02:00  INFO 22540 --- [processor] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-07-14T13:23:46.196+02:00  INFO 22540 --- [processor] [http-nio-8080-exec-1] c.s.p.controller.ResultController        : Going to parse file: File2.csv
+2024-07-14T13:23:46.655+02:00  INFO 22540 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : createJob Job
+2024-07-14T13:23:46.657+02:00  INFO 22540 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : getJob Job
+2024-07-14T13:23:46.668+02:00  INFO 22540 --- [processor] [task-1] c.s.processor.service.CSVFileParser      : Parsing csv file :File2.csv
+2024-07-14T13:23:46.668+02:00  INFO 22540 --- [processor] [task-1] c.s.processor.service.CSVFileParser      : File path C:/Projects/processor/processor/src/main/resources/files/File2.csv
+2024-07-14T13:23:46.674+02:00 ERROR 22540 --- [processor] [task-1] c.s.processor.service.CSVFileParser      : File Not found
+2024-07-14T13:23:46.677+02:00 ERROR 22540 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : Exception 
+
+java.lang.Exception: java.io.FileNotFoundException: path\to\your\file.txt (The system cannot find the path specified)
+	at com.strabag.processor.service.ResultService.getParsedData(ResultService.java:91) ~[classes/:na]
+	at com.strabag.processor.service.ResultService.findJobAndParseFile(ResultService.java:62) ~[classes/:na]
+	at com.strabag.processor.controller.ResultController.parseFile(ResultController.java:49) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.25.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.25.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:117) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:83) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:213) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.1.jar:6.3.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.10.jar:6.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.25.jar:10.1.25]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2024-07-14T13:24:16.376+02:00  INFO 22540 --- [processor] [http-nio-8080-exec-3] c.s.p.controller.ResultController        : Going to parse file: File1.xlsx
+2024-07-14T13:24:16.383+02:00  INFO 22540 --- [processor] [http-nio-8080-exec-3] c.s.processor.service.ResultService      : createJob Job
+2024-07-14T13:24:16.384+02:00  INFO 22540 --- [processor] [http-nio-8080-exec-3] c.s.processor.service.ResultService      : getJob Job
+2024-07-14T13:24:16.385+02:00  INFO 22540 --- [processor] [task-2] c.s.p.service.XLSXFileParserService      : Parsing xlsx file:File1.xlsx 
+2024-07-14T13:24:17.565+02:00  INFO 22540 --- [processor] [task-2] c.s.p.service.XLSXFileParserService      : Parsed data of xlsx file:[{"Class 1":"Data 1","Section ":"Section 1","Class 3":"Data3 1","Class 2":"Data2 1"},{"Class 1":"Data 2","Section ":"Section 2","Class 3":"Data3 2","Class 2":"Data2 2"},{"Class 1":"Data 3","Section ":"Section 3","Class 3":"Data3 3","Class 2":"Data2 3"},{"Class 1":"Data 4","Section ":"Section 4","Class 3":"Data3 4","Class 2":"Data2 4"},{"Class 1":"Data 5","Section ":"Section 5","Class 3":"Data3 5","Class 2":"Data2 5"},{"Class 1":"Data 6","Section ":"Section 6","Class 3":"Data3 6","Class 2":"Data2 6"},{"Class 1":"Data 7","Section ":"Section 7","Class 3":"Data3 7","Class 2":"Data2 7"},{"Class 1":"Data 8","Section ":"Section 8","Class 3":"Data3 8","Class 2":"Data2 8"},{"Class 1":"Data 9","Section ":"Section 9","Class 3":"Data3 9","Class 2":"Data2 9"},{"Class 1":"Data 10","Section ":"Section 10","Class 3":"Data3 10","Class 2":"Data2 10"},{"Class 1":"Data 11","Section ":"Section 11","Class 3":"Data3 11","Class 2":"Data2 11"},{"Class 1":"Data 12","Section ":"Section 12","Class 3":"Data3 12","Class 2":"Data2 12"},{"Class 1":"Data 13","Section ":"Section 13","Class 3":"Data3 13","Class 2":"Data2 13"},{"Class 1":"Data 14","Section ":"Section 14","Class 3":"Data3 14","Class 2":"Data2 14"},{"Class 1":"Data 15","Section ":"Section 15","Class 3":"Data3 15","Class 2":"Data2 15"},{"Class 1":"Data 16","Section ":"Section 16","Class 3":"Data3 16","Class 2":"Data2 16"},{"Class 1":"Data 17","Section ":"Section 17","Class 3":"Data3 17","Class 2":"Data2 17"},{"Class 1":"Data 18","Section ":"Section 18","Class 3":"Data3 18","Class 2":"Data2 18"},{"Class 1":"Data 19","Section ":"Section 19","Class 3":"Data3 19","Class 2":"Data2 19"},{"Class 1":"Data 20","Section ":"Section 20","Class 3":"Data3 20","Class 2":"Data2 20"},{"Class 1":"Data 21","Section ":"Section 21","Class 3":"Data3 21","Class 2":"Data2 21"},{"Class 1":"Data 22","Section ":"Section 22","Class 3":"Data3 22","Class 2":"Data2 22"},{"Class 1":"Data 23","Section ":"Section 23","Class 3":"Data3 23","Class 2":"Data2 23"},{"Class 1":"Data 24","Section ":"Section 24","Class 3":"Data3 24","Class 2":"Data2 24"},{"Class 1":"Data 25","Section ":"Section 25","Class 3":"Data3 25","Class 2":"Data2 25"},{"Class 1":"Data 26","Section ":"Section 26","Class 3":"Data3 26","Class 2":"Data2 26"},{"Class 1":"Data 27","Section ":"Section 27","Class 3":"Data3 27","Class 2":"Data2 27"},{"Class 1":"Data 28","Section ":"Section 28","Class 3":"Data3 28","Class 2":"Data2 28"},{"Class 1":"Data 29","Section ":"Section 29","Class 3":"Data3 29","Class 2":"Data2 29"}] 
+2024-07-14T13:24:17.566+02:00  INFO 22540 --- [processor] [http-nio-8080-exec-3] c.s.processor.service.ResultService      : getParsedData parsed data 
+2024-07-14T13:24:17.603+02:00  INFO 22540 --- [processor] [http-nio-8080-exec-3] c.s.processor.service.ResultService      : createResult Job
+2024-07-14T13:24:17.604+02:00  INFO 22540 --- [processor] [http-nio-8080-exec-3] c.s.processor.service.ResultService      : findJobAndParseFile() parsed response 
+2024-07-14T13:24:33.728+02:00  INFO 23228 --- [processor] [main] c.s.processor.FileParserApplication      : Starting FileParserApplication using Java 17.0.9 with PID 23228 (C:\Projects\processor\processor\target\classes started by Shreya in C:\Projects\processor\processor)
+2024-07-14T13:24:33.737+02:00  INFO 23228 --- [processor] [main] c.s.processor.FileParserApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-07-14T13:24:35.719+02:00  INFO 23228 --- [processor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-14T13:24:35.869+02:00  INFO 23228 --- [processor] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131 ms. Found 2 JPA repository interfaces.
+2024-07-14T13:24:37.530+02:00  INFO 23228 --- [processor] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-14T13:24:37.559+02:00  INFO 23228 --- [processor] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-14T13:24:37.559+02:00  INFO 23228 --- [processor] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-14T13:24:37.759+02:00  INFO 23228 --- [processor] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-14T13:24:37.760+02:00  INFO 23228 --- [processor] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3884 ms
+2024-07-14T13:24:37.821+02:00  INFO 23228 --- [processor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-14T13:24:38.384+02:00  INFO 23228 --- [processor] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:33435072-2851-4194-8521-0eff41a870ca user=SA
+2024-07-14T13:24:38.388+02:00  INFO 23228 --- [processor] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-14T13:24:38.416+02:00  INFO 23228 --- [processor] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:33435072-2851-4194-8521-0eff41a870ca'
+2024-07-14T13:24:38.832+02:00  INFO 23228 --- [processor] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-14T13:24:39.014+02:00  INFO 23228 --- [processor] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-14T13:24:39.109+02:00  INFO 23228 --- [processor] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-14T13:24:40.005+02:00  INFO 23228 --- [processor] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-14T13:24:41.778+02:00  INFO 23228 --- [processor] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-14T13:24:41.893+02:00  INFO 23228 --- [processor] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-14T13:24:42.712+02:00  INFO 23228 --- [processor] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-14T13:24:43.818+02:00  WARN 23228 --- [processor] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-14T13:24:44.141+02:00  INFO 23228 --- [processor] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-07-14T13:24:44.367+02:00  INFO 23228 --- [processor] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-07-14T13:24:45.433+02:00  INFO 23228 --- [processor] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-14T13:24:45.452+02:00  INFO 23228 --- [processor] [main] c.s.processor.FileParserApplication      : Started FileParserApplication in 13.74 seconds (process running for 15.917)
+2024-07-14T13:24:52.623+02:00  INFO 23228 --- [processor] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-14T13:24:52.625+02:00  INFO 23228 --- [processor] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-14T13:24:52.633+02:00  INFO 23228 --- [processor] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2024-07-14T13:24:53.092+02:00  INFO 23228 --- [processor] [http-nio-8080-exec-1] c.s.p.controller.ResultController        : Going to parse file: File1.xlsx
+2024-07-14T13:24:53.462+02:00  INFO 23228 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : createJob Job
+2024-07-14T13:24:53.463+02:00  INFO 23228 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : getJob Job
+2024-07-14T13:24:53.469+02:00  INFO 23228 --- [processor] [task-1] c.s.p.service.XLSXFileParserService      : Parsing xlsx file:File1.xlsx 
+2024-07-14T13:24:54.446+02:00  INFO 23228 --- [processor] [task-1] c.s.p.service.XLSXFileParserService      : Parsed data of xlsx file:[{"Class 1":"Data 1","Section ":"Section 1","Class 3":"Data3 1","Class 2":"Data2 1"},{"Class 1":"Data 2","Section ":"Section 2","Class 3":"Data3 2","Class 2":"Data2 2"},{"Class 1":"Data 3","Section ":"Section 3","Class 3":"Data3 3","Class 2":"Data2 3"},{"Class 1":"Data 4","Section ":"Section 4","Class 3":"Data3 4","Class 2":"Data2 4"},{"Class 1":"Data 5","Section ":"Section 5","Class 3":"Data3 5","Class 2":"Data2 5"},{"Class 1":"Data 6","Section ":"Section 6","Class 3":"Data3 6","Class 2":"Data2 6"},{"Class 1":"Data 7","Section ":"Section 7","Class 3":"Data3 7","Class 2":"Data2 7"},{"Class 1":"Data 8","Section ":"Section 8","Class 3":"Data3 8","Class 2":"Data2 8"},{"Class 1":"Data 9","Section ":"Section 9","Class 3":"Data3 9","Class 2":"Data2 9"},{"Class 1":"Data 10","Section ":"Section 10","Class 3":"Data3 10","Class 2":"Data2 10"},{"Class 1":"Data 11","Section ":"Section 11","Class 3":"Data3 11","Class 2":"Data2 11"},{"Class 1":"Data 12","Section ":"Section 12","Class 3":"Data3 12","Class 2":"Data2 12"},{"Class 1":"Data 13","Section ":"Section 13","Class 3":"Data3 13","Class 2":"Data2 13"},{"Class 1":"Data 14","Section ":"Section 14","Class 3":"Data3 14","Class 2":"Data2 14"},{"Class 1":"Data 15","Section ":"Section 15","Class 3":"Data3 15","Class 2":"Data2 15"},{"Class 1":"Data 16","Section ":"Section 16","Class 3":"Data3 16","Class 2":"Data2 16"},{"Class 1":"Data 17","Section ":"Section 17","Class 3":"Data3 17","Class 2":"Data2 17"},{"Class 1":"Data 18","Section ":"Section 18","Class 3":"Data3 18","Class 2":"Data2 18"},{"Class 1":"Data 19","Section ":"Section 19","Class 3":"Data3 19","Class 2":"Data2 19"},{"Class 1":"Data 20","Section ":"Section 20","Class 3":"Data3 20","Class 2":"Data2 20"},{"Class 1":"Data 21","Section ":"Section 21","Class 3":"Data3 21","Class 2":"Data2 21"},{"Class 1":"Data 22","Section ":"Section 22","Class 3":"Data3 22","Class 2":"Data2 22"},{"Class 1":"Data 23","Section ":"Section 23","Class 3":"Data3 23","Class 2":"Data2 23"},{"Class 1":"Data 24","Section ":"Section 24","Class 3":"Data3 24","Class 2":"Data2 24"},{"Class 1":"Data 25","Section ":"Section 25","Class 3":"Data3 25","Class 2":"Data2 25"},{"Class 1":"Data 26","Section ":"Section 26","Class 3":"Data3 26","Class 2":"Data2 26"},{"Class 1":"Data 27","Section ":"Section 27","Class 3":"Data3 27","Class 2":"Data2 27"},{"Class 1":"Data 28","Section ":"Section 28","Class 3":"Data3 28","Class 2":"Data2 28"},{"Class 1":"Data 29","Section ":"Section 29","Class 3":"Data3 29","Class 2":"Data2 29"}] 
+2024-07-14T13:24:54.447+02:00  INFO 23228 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : getParsedData parsed data 
+2024-07-14T13:24:54.482+02:00  INFO 23228 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : createResult Job
+2024-07-14T13:24:54.482+02:00  INFO 23228 --- [processor] [http-nio-8080-exec-1] c.s.processor.service.ResultService      : findJobAndParseFile() parsed response 
+2024-07-14T13:25:00.768+02:00  INFO 23228 --- [processor] [http-nio-8080-exec-3] c.s.p.controller.ResultController        : Going to parse file: File2.csv
+2024-07-14T13:25:00.778+02:00  INFO 23228 --- [processor] [http-nio-8080-exec-3] c.s.processor.service.ResultService      : createJob Job
+2024-07-14T13:25:00.779+02:00  INFO 23228 --- [processor] [http-nio-8080-exec-3] c.s.processor.service.ResultService      : getJob Job
+2024-07-14T13:25:00.781+02:00  INFO 23228 --- [processor] [task-2] c.s.processor.service.CSVFileParser      : Parsing csv file :File2.csv
+2024-07-14T13:25:00.782+02:00  INFO 23228 --- [processor] [task-2] c.s.processor.service.CSVFileParser      : File path C:/Projects/processor/processor/src/main/resources/files/File2.csv
+2024-07-14T13:25:00.882+02:00  INFO 23228 --- [processor] [task-2] c.s.processor.service.CSVFileParser      : Parsed data of csv file :[{"Class 1":"Data 1","Section ":"Section 1","Class 3":"Data3 1","Class 2":"Data2 1"},{"Class 1":"Data 2","Section ":"Section 2","Class 3":"Data3 2","Class 2":"Data2 2"},{"Class 1":"Data 3","Section ":"Section 3","Class 3":"Data3 3","Class 2":"Data2 3"},{"Class 1":"Data 4","Section ":"Section 4","Class 3":"Data3 4","Class 2":"Data2 4"},{"Class 1":"Data 5","Section ":"Section 5","Class 3":"Data3 5","Class 2":"Data2 5"},{"Class 1":"Data 6","Section ":"Section 6","Class 3":"Data3 6","Class 2":"Data2 6"},{"Class 1":"Data 7","Section ":"Section 7","Class 3":"Data3 7","Class 2":"Data2 7"},{"Class 1":"Data 8","Section ":"Section 8","Class 3":"Data3 8","Class 2":"Data2 8"},{"Class 1":"Data 9","Section ":"Section 9","Class 3":"Data3 9","Class 2":"Data2 9"},{"Class 1":"Data 10","Section ":"Section 10","Class 3":"Data3 10","Class 2":"Data2 10"},{"Class 1":"Data 11","Section ":"Section 11","Class 3":"Data3 11","Class 2":"Data2 11"},{"Class 1":"Data 12","Section ":"Section 12","Class 3":"Data3 12","Class 2":"Data2 12"},{"Class 1":"Data 13","Section ":"Section 13","Class 3":"Data3 13","Class 2":"Data2 13"},{"Class 1":"Data 14","Section ":"Section 14","Class 3":"Data3 14","Class 2":"Data2 14"},{"Class 1":"Data 15","Section ":"Section 15","Class 3":"Data3 15","Class 2":"Data2 15"},{"Class 1":"Data 16","Section ":"Section 16","Class 3":"Data3 16","Class 2":"Data2 16"},{"Class 1":"Data 17","Section ":"Section 17","Class 3":"Data3 17","Class 2":"Data2 17"},{"Class 1":"Data 18","Section ":"Section 18","Class 3":"Data3 18","Class 2":"Data2 18"},{"Class 1":"Data 19","Section ":"Section 19","Class 3":"Data3 19","Class 2":"Data2 19"},{"Class 1":"Data 20","Section ":"Section 20","Class 3":"Data3 20","Class 2":"Data2 20"},{"Class 1":"Data 21","Section ":"Section 21","Class 3":"Data3 21","Class 2":"Data2 21"},{"Class 1":"Data 22","Section ":"Section 22","Class 3":"Data3 22","Class 2":"Data2 22"},{"Class 1":"Data 23","Section ":"Section 23","Class 3":"Data3 23","Class 2":"Data2 23"},{"Class 1":"Data 24","Section ":"Section 24","Class 3":"Data3 24","Class 2":"Data2 24"},{"Class 1":"Data 25","Section ":"Section 25","Class 3":"Data3 25","Class 2":"Data2 25"},{"Class 1":"Data 26","Section ":"Section 26","Class 3":"Data3 26","Class 2":"Data2 26"},{"Class 1":"Data 27","Section ":"Section 27","Class 3":"Data3 27","Class 2":"Data2 27"},{"Class 1":"Data 28","Section ":"Section 28","Class 3":"Data3 28","Class 2":"Data2 28"},{"Class 1":"Data 29","Section ":"Section 29","Class 3":"Data3 29","Class 2":"Data2 29"}]
+2024-07-14T13:25:00.883+02:00  INFO 23228 --- [processor] [http-nio-8080-exec-3] c.s.processor.service.ResultService      : getParsedData parsed data 
+2024-07-14T13:25:00.891+02:00  INFO 23228 --- [processor] [http-nio-8080-exec-3] c.s.processor.service.ResultService      : createResult Job
+2024-07-14T13:25:00.892+02:00  INFO 23228 --- [processor] [http-nio-8080-exec-3] c.s.processor.service.ResultService      : findJobAndParseFile() parsed response 
+2024-07-14T13:31:23.292+02:00  INFO 24080 --- [fileparser] [main] c.s.fileparser.FileParserApplication     : Starting FileParserApplication using Java 17.0.9 with PID 24080 (C:\Projects\processor\processor\target\classes started by Shreya in C:\Projects\processor\processor)
+2024-07-14T13:31:23.297+02:00  INFO 24080 --- [fileparser] [main] c.s.fileparser.FileParserApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-14T13:31:24.944+02:00  INFO 24080 --- [fileparser] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-14T13:31:25.065+02:00  INFO 24080 --- [fileparser] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 2 JPA repository interfaces.
+2024-07-14T13:31:26.449+02:00  INFO 24080 --- [fileparser] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-14T13:31:26.473+02:00  INFO 24080 --- [fileparser] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-14T13:31:26.474+02:00  INFO 24080 --- [fileparser] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-14T13:31:26.657+02:00  INFO 24080 --- [fileparser] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-14T13:31:26.658+02:00  INFO 24080 --- [fileparser] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3246 ms
+2024-07-14T13:31:26.722+02:00  INFO 24080 --- [fileparser] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-14T13:31:27.128+02:00  INFO 24080 --- [fileparser] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:33435072-2851-4194-8521-0eff41a870ca user=SA
+2024-07-14T13:31:27.132+02:00  INFO 24080 --- [fileparser] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-14T13:31:27.158+02:00  INFO 24080 --- [fileparser] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:33435072-2851-4194-8521-0eff41a870ca'
+2024-07-14T13:31:27.494+02:00  INFO 24080 --- [fileparser] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-14T13:31:27.646+02:00  INFO 24080 --- [fileparser] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-14T13:31:27.734+02:00  INFO 24080 --- [fileparser] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-14T13:31:28.373+02:00  INFO 24080 --- [fileparser] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-14T13:31:29.973+02:00  INFO 24080 --- [fileparser] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-14T13:31:30.102+02:00  INFO 24080 --- [fileparser] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-14T13:31:30.582+02:00  INFO 24080 --- [fileparser] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-14T13:31:31.140+02:00  WARN 24080 --- [fileparser] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-14T13:31:31.298+02:00  INFO 24080 --- [fileparser] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-07-14T13:31:31.449+02:00  INFO 24080 --- [fileparser] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-07-14T13:31:32.114+02:00  WARN 24080 --- [fileparser] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-07-14T13:31:32.116+02:00  INFO 24080 --- [fileparser] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-07-14T13:31:32.119+02:00  INFO 24080 --- [fileparser] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-07-14T13:31:32.124+02:00  INFO 24080 --- [fileparser] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-07-14T13:31:32.146+02:00  INFO 24080 --- [fileparser] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-07-14T13:31:32.174+02:00 ERROR 24080 --- [fileparser] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-07-14T13:32:38.535+02:00  INFO 22360 --- [fileparser] [main] c.s.fileparser.FileParserApplication     : Starting FileParserApplication using Java 17.0.9 with PID 22360 (C:\Projects\processor\processor\target\classes started by Shreya in C:\Projects\processor\processor)
+2024-07-14T13:32:38.541+02:00  INFO 22360 --- [fileparser] [main] c.s.fileparser.FileParserApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-07-14T13:32:40.328+02:00  INFO 22360 --- [fileparser] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-14T13:32:40.470+02:00  INFO 22360 --- [fileparser] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 2 JPA repository interfaces.
+2024-07-14T13:32:42.066+02:00  INFO 22360 --- [fileparser] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-07-14T13:32:42.097+02:00  INFO 22360 --- [fileparser] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-14T13:32:42.097+02:00  INFO 22360 --- [fileparser] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-07-14T13:32:42.290+02:00  INFO 22360 --- [fileparser] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-14T13:32:42.291+02:00  INFO 22360 --- [fileparser] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3620 ms
+2024-07-14T13:32:42.364+02:00  INFO 22360 --- [fileparser] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-14T13:32:42.853+02:00  INFO 22360 --- [fileparser] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:33435072-2851-4194-8521-0eff41a870ca user=SA
+2024-07-14T13:32:42.859+02:00  INFO 22360 --- [fileparser] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-14T13:32:42.894+02:00  INFO 22360 --- [fileparser] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:33435072-2851-4194-8521-0eff41a870ca'
+2024-07-14T13:32:43.336+02:00  INFO 22360 --- [fileparser] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-14T13:32:43.505+02:00  INFO 22360 --- [fileparser] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-14T13:32:43.592+02:00  INFO 22360 --- [fileparser] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-14T13:32:44.223+02:00  INFO 22360 --- [fileparser] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-14T13:32:45.579+02:00  INFO 22360 --- [fileparser] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-14T13:32:45.701+02:00  INFO 22360 --- [fileparser] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-14T13:32:46.318+02:00  INFO 22360 --- [fileparser] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-07-14T13:32:47.012+02:00  WARN 22360 --- [fileparser] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-14T13:32:47.215+02:00  INFO 22360 --- [fileparser] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-07-14T13:32:47.342+02:00  INFO 22360 --- [fileparser] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-07-14T13:32:48.184+02:00  INFO 22360 --- [fileparser] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-07-14T13:32:48.205+02:00  INFO 22360 --- [fileparser] [main] c.s.fileparser.FileParserApplication     : Started FileParserApplication in 10.861 seconds (process running for 11.795)
+2024-07-14T13:33:28.348+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-14T13:33:28.349+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-14T13:33:28.355+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2024-07-14T13:33:28.814+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-1] c.s.f.controller.ResultController        : Going to parse file: File2.csv
+2024-07-14T13:33:29.133+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-1] c.s.fileparser.service.ResultService     : createJob Job
+2024-07-14T13:33:29.134+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-1] c.s.fileparser.service.ResultService     : getJob Job
+2024-07-14T13:33:29.144+02:00  INFO 22360 --- [fileparser] [task-1] c.s.fileparser.service.CSVFileParser     : Parsing csv file :File2.csv
+2024-07-14T13:33:29.145+02:00  INFO 22360 --- [fileparser] [task-1] c.s.fileparser.service.CSVFileParser     : File path C:/Projects/processor/processor/src/main/resources/files/File2.csv
+2024-07-14T13:33:29.203+02:00  INFO 22360 --- [fileparser] [task-1] c.s.fileparser.service.CSVFileParser     : Parsed data of csv file :[{"Class 1":"Data 1","Section ":"Section 1","Class 3":"Data3 1","Class 2":"Data2 1"},{"Class 1":"Data 2","Section ":"Section 2","Class 3":"Data3 2","Class 2":"Data2 2"},{"Class 1":"Data 3","Section ":"Section 3","Class 3":"Data3 3","Class 2":"Data2 3"},{"Class 1":"Data 4","Section ":"Section 4","Class 3":"Data3 4","Class 2":"Data2 4"},{"Class 1":"Data 5","Section ":"Section 5","Class 3":"Data3 5","Class 2":"Data2 5"},{"Class 1":"Data 6","Section ":"Section 6","Class 3":"Data3 6","Class 2":"Data2 6"},{"Class 1":"Data 7","Section ":"Section 7","Class 3":"Data3 7","Class 2":"Data2 7"},{"Class 1":"Data 8","Section ":"Section 8","Class 3":"Data3 8","Class 2":"Data2 8"},{"Class 1":"Data 9","Section ":"Section 9","Class 3":"Data3 9","Class 2":"Data2 9"},{"Class 1":"Data 10","Section ":"Section 10","Class 3":"Data3 10","Class 2":"Data2 10"},{"Class 1":"Data 11","Section ":"Section 11","Class 3":"Data3 11","Class 2":"Data2 11"},{"Class 1":"Data 12","Section ":"Section 12","Class 3":"Data3 12","Class 2":"Data2 12"},{"Class 1":"Data 13","Section ":"Section 13","Class 3":"Data3 13","Class 2":"Data2 13"},{"Class 1":"Data 14","Section ":"Section 14","Class 3":"Data3 14","Class 2":"Data2 14"},{"Class 1":"Data 15","Section ":"Section 15","Class 3":"Data3 15","Class 2":"Data2 15"},{"Class 1":"Data 16","Section ":"Section 16","Class 3":"Data3 16","Class 2":"Data2 16"},{"Class 1":"Data 17","Section ":"Section 17","Class 3":"Data3 17","Class 2":"Data2 17"},{"Class 1":"Data 18","Section ":"Section 18","Class 3":"Data3 18","Class 2":"Data2 18"},{"Class 1":"Data 19","Section ":"Section 19","Class 3":"Data3 19","Class 2":"Data2 19"},{"Class 1":"Data 20","Section ":"Section 20","Class 3":"Data3 20","Class 2":"Data2 20"},{"Class 1":"Data 21","Section ":"Section 21","Class 3":"Data3 21","Class 2":"Data2 21"},{"Class 1":"Data 22","Section ":"Section 22","Class 3":"Data3 22","Class 2":"Data2 22"},{"Class 1":"Data 23","Section ":"Section 23","Class 3":"Data3 23","Class 2":"Data2 23"},{"Class 1":"Data 24","Section ":"Section 24","Class 3":"Data3 24","Class 2":"Data2 24"},{"Class 1":"Data 25","Section ":"Section 25","Class 3":"Data3 25","Class 2":"Data2 25"},{"Class 1":"Data 26","Section ":"Section 26","Class 3":"Data3 26","Class 2":"Data2 26"},{"Class 1":"Data 27","Section ":"Section 27","Class 3":"Data3 27","Class 2":"Data2 27"},{"Class 1":"Data 28","Section ":"Section 28","Class 3":"Data3 28","Class 2":"Data2 28"},{"Class 1":"Data 29","Section ":"Section 29","Class 3":"Data3 29","Class 2":"Data2 29"}]
+2024-07-14T13:33:29.204+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-1] c.s.fileparser.service.ResultService     : getParsedData parsed data 
+2024-07-14T13:33:29.232+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-1] c.s.fileparser.service.ResultService     : createResult Job
+2024-07-14T13:33:29.232+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-1] c.s.fileparser.service.ResultService     : findJobAndParseFile() parsed response 
+2024-07-14T13:33:37.349+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-3] c.s.f.controller.ResultController        : Going to parse file: File1.xlsx
+2024-07-14T13:33:37.358+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-3] c.s.fileparser.service.ResultService     : createJob Job
+2024-07-14T13:33:37.359+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-3] c.s.fileparser.service.ResultService     : getJob Job
+2024-07-14T13:33:37.360+02:00  INFO 22360 --- [fileparser] [task-2] c.s.f.service.XLSXFileParserService      : Parsing xlsx file:File1.xlsx 
+2024-07-14T13:33:38.384+02:00  INFO 22360 --- [fileparser] [task-2] c.s.f.service.XLSXFileParserService      : Parsed data of xlsx file:[{"Class 1":"Data 1","Section ":"Section 1","Class 3":"Data3 1","Class 2":"Data2 1"},{"Class 1":"Data 2","Section ":"Section 2","Class 3":"Data3 2","Class 2":"Data2 2"},{"Class 1":"Data 3","Section ":"Section 3","Class 3":"Data3 3","Class 2":"Data2 3"},{"Class 1":"Data 4","Section ":"Section 4","Class 3":"Data3 4","Class 2":"Data2 4"},{"Class 1":"Data 5","Section ":"Section 5","Class 3":"Data3 5","Class 2":"Data2 5"},{"Class 1":"Data 6","Section ":"Section 6","Class 3":"Data3 6","Class 2":"Data2 6"},{"Class 1":"Data 7","Section ":"Section 7","Class 3":"Data3 7","Class 2":"Data2 7"},{"Class 1":"Data 8","Section ":"Section 8","Class 3":"Data3 8","Class 2":"Data2 8"},{"Class 1":"Data 9","Section ":"Section 9","Class 3":"Data3 9","Class 2":"Data2 9"},{"Class 1":"Data 10","Section ":"Section 10","Class 3":"Data3 10","Class 2":"Data2 10"},{"Class 1":"Data 11","Section ":"Section 11","Class 3":"Data3 11","Class 2":"Data2 11"},{"Class 1":"Data 12","Section ":"Section 12","Class 3":"Data3 12","Class 2":"Data2 12"},{"Class 1":"Data 13","Section ":"Section 13","Class 3":"Data3 13","Class 2":"Data2 13"},{"Class 1":"Data 14","Section ":"Section 14","Class 3":"Data3 14","Class 2":"Data2 14"},{"Class 1":"Data 15","Section ":"Section 15","Class 3":"Data3 15","Class 2":"Data2 15"},{"Class 1":"Data 16","Section ":"Section 16","Class 3":"Data3 16","Class 2":"Data2 16"},{"Class 1":"Data 17","Section ":"Section 17","Class 3":"Data3 17","Class 2":"Data2 17"},{"Class 1":"Data 18","Section ":"Section 18","Class 3":"Data3 18","Class 2":"Data2 18"},{"Class 1":"Data 19","Section ":"Section 19","Class 3":"Data3 19","Class 2":"Data2 19"},{"Class 1":"Data 20","Section ":"Section 20","Class 3":"Data3 20","Class 2":"Data2 20"},{"Class 1":"Data 21","Section ":"Section 21","Class 3":"Data3 21","Class 2":"Data2 21"},{"Class 1":"Data 22","Section ":"Section 22","Class 3":"Data3 22","Class 2":"Data2 22"},{"Class 1":"Data 23","Section ":"Section 23","Class 3":"Data3 23","Class 2":"Data2 23"},{"Class 1":"Data 24","Section ":"Section 24","Class 3":"Data3 24","Class 2":"Data2 24"},{"Class 1":"Data 25","Section ":"Section 25","Class 3":"Data3 25","Class 2":"Data2 25"},{"Class 1":"Data 26","Section ":"Section 26","Class 3":"Data3 26","Class 2":"Data2 26"},{"Class 1":"Data 27","Section ":"Section 27","Class 3":"Data3 27","Class 2":"Data2 27"},{"Class 1":"Data 28","Section ":"Section 28","Class 3":"Data3 28","Class 2":"Data2 28"},{"Class 1":"Data 29","Section ":"Section 29","Class 3":"Data3 29","Class 2":"Data2 29"}] 
+2024-07-14T13:33:38.385+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-3] c.s.fileparser.service.ResultService     : getParsedData parsed data 
+2024-07-14T13:33:38.393+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-3] c.s.fileparser.service.ResultService     : createResult Job
+2024-07-14T13:33:38.394+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-3] c.s.fileparser.service.ResultService     : findJobAndParseFile() parsed response 
+2024-07-14T13:35:09.373+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-6] c.s.fileparser.controller.JobController  : Fetching all jobs
+2024-07-14T13:35:41.105+02:00  WARN 22360 --- [fileparser] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-07-14T13:35:45.102+02:00  WARN 22360 --- [fileparser] [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-07-14T13:35:53.950+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-2] c.s.fileparser.controller.JobController  : Fetching all job by id:1
+2024-07-14T13:36:13.261+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-1] c.s.f.controller.ResultController        : find Result by id: 1
+2024-07-14T13:36:39.603+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-3] c.s.f.controller.ResultController        : Searching results with query: data
+2024-07-14T13:36:45.636+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-4] c.s.f.controller.ResultController        : Searching results with query: Data
+2024-07-14T13:37:49.758+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-7] c.s.f.controller.ResultController        : find Job by Job id: 1
+2024-07-14T13:50:23.630+02:00  WARN 22360 --- [fileparser] [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "parse"]
+2024-07-14T13:50:43.623+02:00  WARN 22360 --- [fileparser] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "job"]
+2024-07-14T13:50:53.432+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-3] c.s.fileparser.controller.JobController  : Fetching all jobs
+2024-07-14T13:51:53.758+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-5] c.s.f.controller.ResultController        : Going to parse file: File1.xlsx
+2024-07-14T13:51:53.774+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-5] c.s.fileparser.service.ResultService     : getJob Job
+2024-07-14T13:51:53.782+02:00  INFO 22360 --- [fileparser] [task-3] c.s.f.service.XLSXFileParserService      : Parsing xlsx file:File1.xlsx 
+2024-07-14T13:51:53.898+02:00  INFO 22360 --- [fileparser] [task-3] c.s.f.service.XLSXFileParserService      : Parsed data of xlsx file:[{"Class 1":"Data 1","Section ":"Section 1","Class 3":"Data3 1","Class 2":"Data2 1"},{"Class 1":"Data 2","Section ":"Section 2","Class 3":"Data3 2","Class 2":"Data2 2"},{"Class 1":"Data 3","Section ":"Section 3","Class 3":"Data3 3","Class 2":"Data2 3"},{"Class 1":"Data 4","Section ":"Section 4","Class 3":"Data3 4","Class 2":"Data2 4"},{"Class 1":"Data 5","Section ":"Section 5","Class 3":"Data3 5","Class 2":"Data2 5"},{"Class 1":"Data 6","Section ":"Section 6","Class 3":"Data3 6","Class 2":"Data2 6"},{"Class 1":"Data 7","Section ":"Section 7","Class 3":"Data3 7","Class 2":"Data2 7"},{"Class 1":"Data 8","Section ":"Section 8","Class 3":"Data3 8","Class 2":"Data2 8"},{"Class 1":"Data 9","Section ":"Section 9","Class 3":"Data3 9","Class 2":"Data2 9"},{"Class 1":"Data 10","Section ":"Section 10","Class 3":"Data3 10","Class 2":"Data2 10"},{"Class 1":"Data 11","Section ":"Section 11","Class 3":"Data3 11","Class 2":"Data2 11"},{"Class 1":"Data 12","Section ":"Section 12","Class 3":"Data3 12","Class 2":"Data2 12"},{"Class 1":"Data 13","Section ":"Section 13","Class 3":"Data3 13","Class 2":"Data2 13"},{"Class 1":"Data 14","Section ":"Section 14","Class 3":"Data3 14","Class 2":"Data2 14"},{"Class 1":"Data 15","Section ":"Section 15","Class 3":"Data3 15","Class 2":"Data2 15"},{"Class 1":"Data 16","Section ":"Section 16","Class 3":"Data3 16","Class 2":"Data2 16"},{"Class 1":"Data 17","Section ":"Section 17","Class 3":"Data3 17","Class 2":"Data2 17"},{"Class 1":"Data 18","Section ":"Section 18","Class 3":"Data3 18","Class 2":"Data2 18"},{"Class 1":"Data 19","Section ":"Section 19","Class 3":"Data3 19","Class 2":"Data2 19"},{"Class 1":"Data 20","Section ":"Section 20","Class 3":"Data3 20","Class 2":"Data2 20"},{"Class 1":"Data 21","Section ":"Section 21","Class 3":"Data3 21","Class 2":"Data2 21"},{"Class 1":"Data 22","Section ":"Section 22","Class 3":"Data3 22","Class 2":"Data2 22"},{"Class 1":"Data 23","Section ":"Section 23","Class 3":"Data3 23","Class 2":"Data2 23"},{"Class 1":"Data 24","Section ":"Section 24","Class 3":"Data3 24","Class 2":"Data2 24"},{"Class 1":"Data 25","Section ":"Section 25","Class 3":"Data3 25","Class 2":"Data2 25"},{"Class 1":"Data 26","Section ":"Section 26","Class 3":"Data3 26","Class 2":"Data2 26"},{"Class 1":"Data 27","Section ":"Section 27","Class 3":"Data3 27","Class 2":"Data2 27"},{"Class 1":"Data 28","Section ":"Section 28","Class 3":"Data3 28","Class 2":"Data2 28"},{"Class 1":"Data 29","Section ":"Section 29","Class 3":"Data3 29","Class 2":"Data2 29"}] 
+2024-07-14T13:51:53.899+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-5] c.s.fileparser.service.ResultService     : getParsedData parsed data 
+2024-07-14T13:51:53.915+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-5] c.s.fileparser.service.ResultService     : createResult Job
+2024-07-14T13:51:53.915+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-5] c.s.fileparser.service.ResultService     : findJobAndParseFile() parsed response 
+2024-07-14T13:55:12.231+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-2] c.s.fileparser.controller.JobController  : Fetching all job by id:1
+2024-07-14T13:55:33.016+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-1] c.s.f.controller.ResultController        : find Result by id: 1
+2024-07-14T13:56:04.359+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-4] c.s.f.controller.ResultController        : Searching results with query: Data
+2024-07-14T13:56:35.032+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-5] c.s.f.controller.ResultController        : find Job by Job id: 1
+2024-07-14T13:59:15.168+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-9] c.s.f.controller.ResultController        : Going to parse file: File2.csv
+2024-07-14T13:59:15.178+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-9] c.s.fileparser.service.ResultService     : getJob Job
+2024-07-14T13:59:15.193+02:00  INFO 22360 --- [fileparser] [task-4] c.s.fileparser.service.CSVFileParser     : Parsing csv file :File2.csv
+2024-07-14T13:59:15.193+02:00  INFO 22360 --- [fileparser] [task-4] c.s.fileparser.service.CSVFileParser     : File path C:/Projects/processor/processor/src/main/resources/files/File2.csv
+2024-07-14T13:59:15.214+02:00  INFO 22360 --- [fileparser] [task-4] c.s.fileparser.service.CSVFileParser     : Parsed data of csv file :[{"Class 1":"Data 1","Section ":"Section 1","Class 3":"Data3 1","Class 2":"Data2 1"},{"Class 1":"Data 2","Section ":"Section 2","Class 3":"Data3 2","Class 2":"Data2 2"},{"Class 1":"Data 3","Section ":"Section 3","Class 3":"Data3 3","Class 2":"Data2 3"},{"Class 1":"Data 4","Section ":"Section 4","Class 3":"Data3 4","Class 2":"Data2 4"},{"Class 1":"Data 5","Section ":"Section 5","Class 3":"Data3 5","Class 2":"Data2 5"},{"Class 1":"Data 6","Section ":"Section 6","Class 3":"Data3 6","Class 2":"Data2 6"},{"Class 1":"Data 7","Section ":"Section 7","Class 3":"Data3 7","Class 2":"Data2 7"},{"Class 1":"Data 8","Section ":"Section 8","Class 3":"Data3 8","Class 2":"Data2 8"},{"Class 1":"Data 9","Section ":"Section 9","Class 3":"Data3 9","Class 2":"Data2 9"},{"Class 1":"Data 10","Section ":"Section 10","Class 3":"Data3 10","Class 2":"Data2 10"},{"Class 1":"Data 11","Section ":"Section 11","Class 3":"Data3 11","Class 2":"Data2 11"},{"Class 1":"Data 12","Section ":"Section 12","Class 3":"Data3 12","Class 2":"Data2 12"},{"Class 1":"Data 13","Section ":"Section 13","Class 3":"Data3 13","Class 2":"Data2 13"},{"Class 1":"Data 14","Section ":"Section 14","Class 3":"Data3 14","Class 2":"Data2 14"},{"Class 1":"Data 15","Section ":"Section 15","Class 3":"Data3 15","Class 2":"Data2 15"},{"Class 1":"Data 16","Section ":"Section 16","Class 3":"Data3 16","Class 2":"Data2 16"},{"Class 1":"Data 17","Section ":"Section 17","Class 3":"Data3 17","Class 2":"Data2 17"},{"Class 1":"Data 18","Section ":"Section 18","Class 3":"Data3 18","Class 2":"Data2 18"},{"Class 1":"Data 19","Section ":"Section 19","Class 3":"Data3 19","Class 2":"Data2 19"},{"Class 1":"Data 20","Section ":"Section 20","Class 3":"Data3 20","Class 2":"Data2 20"},{"Class 1":"Data 21","Section ":"Section 21","Class 3":"Data3 21","Class 2":"Data2 21"},{"Class 1":"Data 22","Section ":"Section 22","Class 3":"Data3 22","Class 2":"Data2 22"},{"Class 1":"Data 23","Section ":"Section 23","Class 3":"Data3 23","Class 2":"Data2 23"},{"Class 1":"Data 24","Section ":"Section 24","Class 3":"Data3 24","Class 2":"Data2 24"},{"Class 1":"Data 25","Section ":"Section 25","Class 3":"Data3 25","Class 2":"Data2 25"},{"Class 1":"Data 26","Section ":"Section 26","Class 3":"Data3 26","Class 2":"Data2 26"},{"Class 1":"Data 27","Section ":"Section 27","Class 3":"Data3 27","Class 2":"Data2 27"},{"Class 1":"Data 28","Section ":"Section 28","Class 3":"Data3 28","Class 2":"Data2 28"},{"Class 1":"Data 29","Section ":"Section 29","Class 3":"Data3 29","Class 2":"Data2 29"}]
+2024-07-14T13:59:15.215+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-9] c.s.fileparser.service.ResultService     : getParsedData parsed data 
+2024-07-14T13:59:15.240+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-9] c.s.fileparser.service.ResultService     : createResult Job
+2024-07-14T13:59:15.241+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-9] c.s.fileparser.service.ResultService     : findJobAndParseFile() parsed response 
+2024-07-14T13:59:23.422+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-2] c.s.f.controller.ResultController        : Going to parse file: File3.xlsx
+2024-07-14T13:59:23.430+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-2] c.s.fileparser.service.ResultService     : createJob Job
+2024-07-14T13:59:23.432+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-2] c.s.fileparser.service.ResultService     : getJob Job
+2024-07-14T13:59:23.449+02:00  INFO 22360 --- [fileparser] [task-5] c.s.f.service.XLSXFileParserService      : Parsing xlsx file:File3.xlsx 
+2024-07-14T13:59:23.659+02:00  INFO 22360 --- [fileparser] [task-5] c.s.f.service.XLSXFileParserService      : Parsed data of xlsx file:[{"Class 1":"Data 1","Section ":"Section 1","Class 3":"Data3 1","Class 2":"Data2 1"},{"Class 1":"Data 2","Section ":"Section 2","Class 3":"Data3 2","Class 2":"Data2 2"},{"Class 1":"Data 3","Section ":"Section 3","Class 3":"Data3 3","Class 2":"Data2 3"},{"Class 1":"Data 4","Section ":"Section 4","Class 3":"Data3 4","Class 2":"Data2 4"},{"Class 1":"Data 5","Section ":"Section 5","Class 3":"Data3 5","Class 2":"Data2 5"},{"Class 1":"Data 6","Section ":"Section 6","Class 3":"Data3 6","Class 2":"Data2 6"},{"Class 1":"Data 7","Section ":"Section 7","Class 3":"Data3 7","Class 2":"Data2 7"},{"Class 1":"Data 8","Section ":"Section 8","Class 3":"Data3 8","Class 2":"Data2 8"},{"Class 1":"Data 9","Section ":"Section 9","Class 3":"Data3 9","Class 2":"Data2 9"},{"Class 1":"Data 10","Section ":"Section 10","Class 3":"Data3 10","Class 2":"Data2 10"},{"Class 1":"Data 11","Section ":"Section 11","Class 3":"Data3 11","Class 2":"Data2 11"},{"Class 1":"Data 12","Section ":"Section 12","Class 3":"Data3 12","Class 2":"Data2 12"},{"Class 1":"Data 13","Section ":"Section 13","Class 3":"Data3 13","Class 2":"Data2 13"},{"Class 1":"Data 14","Section ":"Section 14","Class 3":"Data3 14","Class 2":"Data2 14"},{"Class 1":"Data 15","Section ":"Section 15","Class 3":"Data3 15","Class 2":"Data2 15"},{"Class 1":"Data 16","Section ":"Section 16","Class 3":"Data3 16","Class 2":"Data2 16"},{"Class 1":"Data 17","Section ":"Section 17","Class 3":"Data3 17","Class 2":"Data2 17"},{"Class 1":"Data 18","Section ":"Section 18","Class 3":"Data3 18","Class 2":"Data2 18"},{"Class 1":"Data 19","Section ":"Section 19","Class 3":"Data3 19","Class 2":"Data2 19"},{"Class 1":"Data 20","Section ":"Section 20","Class 3":"Data3 20","Class 2":"Data2 20"},{"Class 1":"Data 21","Section ":"Section 21","Class 3":"Data3 21","Class 2":"Data2 21"},{"Class 1":"Data 22","Section ":"Section 22","Class 3":"Data3 22","Class 2":"Data2 22"},{"Class 1":"Data 23","Section ":"Section 23","Class 3":"Data3 23","Class 2":"Data2 23"},{"Class 1":"Data 24","Section ":"Section 24","Class 3":"Data3 24","Class 2":"Data2 24"},{"Class 1":"Data 25","Section ":"Section 25","Class 3":"Data3 25","Class 2":"Data2 25"},{"Class 1":"Data 26","Section ":"Section 26","Class 3":"Data3 26","Class 2":"Data2 26"},{"Class 1":"Data 27","Section ":"Section 27","Class 3":"Data3 27","Class 2":"Data2 27"},{"Class 1":"Data 28","Section ":"Section 28","Class 3":"Data3 28","Class 2":"Data2 28"},{"Class 1":"Data 29","Section ":"Section 29","Class 3":"Data3 29","Class 2":"Data2 29"}] 
+2024-07-14T13:59:23.660+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-2] c.s.fileparser.service.ResultService     : getParsedData parsed data 
+2024-07-14T13:59:23.685+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-2] c.s.fileparser.service.ResultService     : createResult Job
+2024-07-14T13:59:23.687+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-2] c.s.fileparser.service.ResultService     : findJobAndParseFile() parsed response 
+2024-07-14T13:59:29.255+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-1] c.s.f.controller.ResultController        : Going to parse file: File4.xlsx
+2024-07-14T13:59:29.273+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-1] c.s.fileparser.service.ResultService     : createJob Job
+2024-07-14T13:59:29.274+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-1] c.s.fileparser.service.ResultService     : getJob Job
+2024-07-14T13:59:29.275+02:00  INFO 22360 --- [fileparser] [task-6] c.s.f.service.XLSXFileParserService      : Parsing xlsx file:File4.xlsx 
+2024-07-14T13:59:29.353+02:00  INFO 22360 --- [fileparser] [task-6] c.s.f.service.XLSXFileParserService      : Parsed data of xlsx file:[{"Class 1":"Data 1","Section ":"Section 1","Class 3":"Data3 1","Class 2":"Data2 1"},{"Class 1":"Data 2","Section ":"Section 2","Class 3":"Data3 2","Class 2":"Data2 2"},{"Class 1":"Data 3","Section ":"Section 3","Class 3":"Data3 3","Class 2":"Data2 3"},{"Class 1":"Data 4","Section ":"Section 4","Class 3":"Data3 4","Class 2":"Data2 4"},{"Class 1":"Data 5","Section ":"Section 5","Class 3":"Data3 5","Class 2":"Data2 5"},{"Class 1":"Data 6","Section ":"Section 6","Class 3":"Data3 6","Class 2":"Data2 6"},{"Class 1":"Data 7","Section ":"Section 7","Class 3":"Data3 7","Class 2":"Data2 7"},{"Class 1":"Data 8","Section ":"Section 8","Class 3":"Data3 8","Class 2":"Data2 8"},{"Class 1":"Data 9","Section ":"Section 9","Class 3":"Data3 9","Class 2":"Data2 9"},{"Class 1":"Data 10","Section ":"Section 10","Class 3":"Data3 10","Class 2":"Data2 10"},{"Class 1":"Data 11","Section ":"Section 11","Class 3":"Data3 11","Class 2":"Data2 11"},{"Class 1":"Data 12","Section ":"Section 12","Class 3":"Data3 12","Class 2":"Data2 12"},{"Class 1":"Data 13","Section ":"Section 13","Class 3":"Data3 13","Class 2":"Data2 13"},{"Class 1":"Data 14","Section ":"Section 14","Class 3":"Data3 14","Class 2":"Data2 14"},{"Class 1":"Data 15","Section ":"Section 15","Class 3":"Data3 15","Class 2":"Data2 15"},{"Class 1":"Data 16","Section ":"Section 16","Class 3":"Data3 16","Class 2":"Data2 16"},{"Class 1":"Data 17","Section ":"Section 17","Class 3":"Data3 17","Class 2":"Data2 17"},{"Class 1":"Data 18","Section ":"Section 18","Class 3":"Data3 18","Class 2":"Data2 18"},{"Class 1":"Data 19","Section ":"Section 19","Class 3":"Data3 19","Class 2":"Data2 19"},{"Class 1":"Data 20","Section ":"Section 20","Class 3":"Data3 20","Class 2":"Data2 20"},{"Class 1":"Data 21","Section ":"Section 21","Class 3":"Data3 21","Class 2":"Data2 21"},{"Class 1":"Data 22","Section ":"Section 22","Class 3":"Data3 22","Class 2":"Data2 22"},{"Class 1":"Data 23","Section ":"Section 23","Class 3":"Data3 23","Class 2":"Data2 23"},{"Class 1":"Data 24","Section ":"Section 24","Class 3":"Data3 24","Class 2":"Data2 24"},{"Class 1":"Data 25","Section ":"Section 25","Class 3":"Data3 25","Class 2":"Data2 25"},{"Class 1":"Data 26","Section ":"Section 26","Class 3":"Data3 26","Class 2":"Data2 26"},{"Class 1":"Data 27","Section ":"Section 27","Class 3":"Data3 27","Class 2":"Data2 27"},{"Class 1":"Data 28","Section ":"Section 28","Class 3":"Data3 28","Class 2":"Data2 28"},{"Class 1":"Data 29","Section ":"Section 29","Class 3":"Data3 29","Class 2":"Data2 29"}] 
+2024-07-14T13:59:29.353+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-1] c.s.fileparser.service.ResultService     : getParsedData parsed data 
+2024-07-14T13:59:29.365+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-1] c.s.fileparser.service.ResultService     : createResult Job
+2024-07-14T13:59:29.366+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-1] c.s.fileparser.service.ResultService     : findJobAndParseFile() parsed response 
+2024-07-14T14:13:35.734+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-5] c.s.f.controller.ResultController        : Going to parse file: File1.xlsx
+2024-07-14T14:13:35.953+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-5] c.s.fileparser.service.ResultService     : getJob Job
+2024-07-14T14:13:35.960+02:00  INFO 22360 --- [fileparser] [task-7] c.s.f.service.XLSXFileParserService      : Parsing xlsx file:File1.xlsx 
+2024-07-14T14:13:36.194+02:00  INFO 22360 --- [fileparser] [task-7] c.s.f.service.XLSXFileParserService      : Parsed data of xlsx file:[{"Class 1":"Data 1","Section ":"Section 1","Class 3":"Data3 1","Class 2":"Data2 1"},{"Class 1":"Data 2","Section ":"Section 2","Class 3":"Data3 2","Class 2":"Data2 2"},{"Class 1":"Data 3","Section ":"Section 3","Class 3":"Data3 3","Class 2":"Data2 3"},{"Class 1":"Data 4","Section ":"Section 4","Class 3":"Data3 4","Class 2":"Data2 4"},{"Class 1":"Data 5","Section ":"Section 5","Class 3":"Data3 5","Class 2":"Data2 5"},{"Class 1":"Data 6","Section ":"Section 6","Class 3":"Data3 6","Class 2":"Data2 6"},{"Class 1":"Data 7","Section ":"Section 7","Class 3":"Data3 7","Class 2":"Data2 7"},{"Class 1":"Data 8","Section ":"Section 8","Class 3":"Data3 8","Class 2":"Data2 8"},{"Class 1":"Data 9","Section ":"Section 9","Class 3":"Data3 9","Class 2":"Data2 9"},{"Class 1":"Data 10","Section ":"Section 10","Class 3":"Data3 10","Class 2":"Data2 10"},{"Class 1":"Data 11","Section ":"Section 11","Class 3":"Data3 11","Class 2":"Data2 11"},{"Class 1":"Data 12","Section ":"Section 12","Class 3":"Data3 12","Class 2":"Data2 12"},{"Class 1":"Data 13","Section ":"Section 13","Class 3":"Data3 13","Class 2":"Data2 13"},{"Class 1":"Data 14","Section ":"Section 14","Class 3":"Data3 14","Class 2":"Data2 14"},{"Class 1":"Data 15","Section ":"Section 15","Class 3":"Data3 15","Class 2":"Data2 15"},{"Class 1":"Data 16","Section ":"Section 16","Class 3":"Data3 16","Class 2":"Data2 16"},{"Class 1":"Data 17","Section ":"Section 17","Class 3":"Data3 17","Class 2":"Data2 17"},{"Class 1":"Data 18","Section ":"Section 18","Class 3":"Data3 18","Class 2":"Data2 18"},{"Class 1":"Data 19","Section ":"Section 19","Class 3":"Data3 19","Class 2":"Data2 19"},{"Class 1":"Data 20","Section ":"Section 20","Class 3":"Data3 20","Class 2":"Data2 20"},{"Class 1":"Data 21","Section ":"Section 21","Class 3":"Data3 21","Class 2":"Data2 21"},{"Class 1":"Data 22","Section ":"Section 22","Class 3":"Data3 22","Class 2":"Data2 22"},{"Class 1":"Data 23","Section ":"Section 23","Class 3":"Data3 23","Class 2":"Data2 23"},{"Class 1":"Data 24","Section ":"Section 24","Class 3":"Data3 24","Class 2":"Data2 24"},{"Class 1":"Data 25","Section ":"Section 25","Class 3":"Data3 25","Class 2":"Data2 25"},{"Class 1":"Data 26","Section ":"Section 26","Class 3":"Data3 26","Class 2":"Data2 26"},{"Class 1":"Data 27","Section ":"Section 27","Class 3":"Data3 27","Class 2":"Data2 27"},{"Class 1":"Data 28","Section ":"Section 28","Class 3":"Data3 28","Class 2":"Data2 28"},{"Class 1":"Data 29","Section ":"Section 29","Class 3":"Data3 29","Class 2":"Data2 29"}] 
+2024-07-14T14:13:36.197+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-5] c.s.fileparser.service.ResultService     : getParsedData parsed data 
+2024-07-14T14:13:36.227+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-5] c.s.fileparser.service.ResultService     : createResult Job
+2024-07-14T14:13:36.228+02:00  INFO 22360 --- [fileparser] [http-nio-8080-exec-5] c.s.fileparser.service.ResultService     : findJobAndParseFile() parsed response 

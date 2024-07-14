@@ -1,4 +1,4 @@
-package com.strabag.processor.service;
+package com.strabag.fileparser.service;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -10,10 +10,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import com.strabag.processor.controller.ResultController;
-import com.strabag.processor.model.Job;
-import com.strabag.processor.model.JobStatus;
-import com.strabag.processor.repository.JobRepository;
+import com.strabag.fileparser.controller.ResultController;
+import com.strabag.fileparser.model.Job;
+import com.strabag.fileparser.model.JobStatus;
+import com.strabag.fileparser.repository.JobRepository;
 
 @Service
 public class JobService {

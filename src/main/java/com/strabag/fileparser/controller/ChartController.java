@@ -1,4 +1,4 @@
-package com.strabag.processor.controller;
+package com.strabag.fileparser.controller;
 
 import java.util.Map;
 
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.strabag.processor.service.ResultService;
+import com.strabag.fileparser.service.ResultService;
 
 @RestController
 @RequestMapping("/chart")

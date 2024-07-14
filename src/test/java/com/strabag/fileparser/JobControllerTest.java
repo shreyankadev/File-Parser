@@ -1,4 +1,4 @@
-package com.strabag.processor;
+package com.strabag.fileparser;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
@@ -17,10 +17,10 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.strabag.processor.model.Job;
-import com.strabag.processor.model.JobStatus;
-import com.strabag.processor.repository.JobRepository;
-import com.strabag.processor.service.JobService;
+import com.strabag.fileparser.model.Job;
+import com.strabag.fileparser.model.JobStatus;
+import com.strabag.fileparser.repository.JobRepository;
+import com.strabag.fileparser.service.JobService;
 
 @SpringBootTest
 @AutoConfigureMockMvc

@@ -1,12 +1,12 @@
-package com.strabag.processor.config;
+package com.strabag.fileparser.config;
 
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.strabag.processor.model.Job;
-import com.strabag.processor.model.Result;
+import com.strabag.fileparser.model.Job;
+import com.strabag.fileparser.model.Result;
 
 @Configuration
 public class AppConfig {

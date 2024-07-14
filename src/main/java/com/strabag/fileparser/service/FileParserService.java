@@ -1,4 +1,4 @@
-package com.strabag.processor.service;
+package com.strabag.fileparser.service;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
-import com.strabag.processor.config.AppConfig;
+import com.strabag.fileparser.config.AppConfig;
 
 @Service
 public abstract class FileParserService {

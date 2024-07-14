@@ -1,10 +1,10 @@
-package com.strabag.processor.repository;
+package com.strabag.fileparser.repository;
 
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.strabag.processor.model.Job;
+import com.strabag.fileparser.model.Job;
 
 public interface JobRepository extends JpaRepository<Job, Long> {
 	

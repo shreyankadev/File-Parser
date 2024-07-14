@@ -1,4 +1,4 @@
-package com.strabag.processor;
+package com.strabag.fileparser;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
