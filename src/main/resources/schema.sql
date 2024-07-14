@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS JOB (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    job_status VARCHAR(255),
+    create_at date
+);
+
+CREATE TABLE IF NOT EXISTS Result (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    file_name VARCHAR(255),
+    job_id BIGINT,
+    result CLOB,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
