@@ -27,38 +27,37 @@ This project is a Spring Boot application that allows importing CSV and XLSX fil
 ### Setup
 
 1. **Clone the repository:**
-    ```sh
-    git clone https://github.com/shreyankadev/FileParserApplication.git
-    cd file-parser-application
-    ```
+
+    git clone https://github.com/shreyankadev/File-Parser.git
+
+
 
 2. **Update `application.properties`:**
     Configure the `application.properties` file located in `src/main/resources/` to set the import folder path:
-    ```properties
+
     import.folder.path=src/main/resources/files/
-    ```
+
 
 3. **Build the project:**
-    ```sh
+
     mvn clean install
-    ```
+
 
 4. **Run the application:**
-    ```sh
+
     mvn spring-boot:run
-    ```
+
 
 5. **Access H2 Console:**
     - URL: `http://localhost:8080/h2-console`
     - JDBC URL: `jdbc:h2:mem:testdb`
     - User Name: `sa`
     - Password: *(leave it empty)*
+	
+6. ** Access chart:**
+	- access url http://localhost:8080/
 
 ### Endpoints
 
-#### Job Endpoints
-
-
-
-### Example Requests
+Documentation of Endpoints available at https://documenter.getpostman.com/view/33816603/2sA3kPo4BL
 
